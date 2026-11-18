@@ -1,0 +1,50 @@
+# 🏋️ Way 2: REAL multi-turn RL on wsp-llm with prime-rl (cheap settings).
+# Practice floors only (exam floors 2, 6, 20 stay hidden), fast surprise-only reward, LoRA.
+max_steps = 15
+seq_len = 8192                      # multi-turn: tool outputs (the floor table) make conversations long
+
+[deployment]
+num_train_gpus = 1
+num_infer_gpus = 1
+
+[model]
+name = "Qwen/Qwen3-4B-Instruct-2507"   # no-thinking 4B: short answers = cheaper rollouts
+
+[trainer.optim]
+lr = 1e-5
+weight_decay = 0.0
+
+[trainer.model.lora]                  # 📝 the "sticky note": train a small add-on, not the whole model
+rank = 8
+dropout = 0.0
+target_modules = ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
+
+[orchestrator]
+batch_size = 32                     # 4 patients × 8 attempts per step
+
+[orchestrator.train]
+group_size = 8                      # 8 attempts per patient → compare → learn (run 1 taught us: variety!)
+
+[orchestrator.concurrency]
+initial_inflight = 8                # 8 conversations at once (each loads its own patient on the GPU)
+
+[orchestrator.train.sampling]
+max_completion_tokens = 1024
+temperature = 1.0
+
+[[orchestrator.train.source]]
+name = "wsp-llm"
+curriculum = { gates = { zero_advantage = { type = "advantage_range" } } }
+env.taskset.id = "wsp-llm"
+env.taskset.split = "practice"
+env.taskset.fast_reward = true
+env.taskset.task.clinic.timeout.startup = 180
+env.agent.harness.id = "null"
+env.agent.runtime.type = "subprocess"
+env.agent.max_turns = 12
+
+[ckpt]                              # save the trained adapter at the end
+
+[inference.vllm]
+tool_call_parser = "hermes"
+gpu_memory_utilization = 0.6        # leave room on the inference GPU for the patients

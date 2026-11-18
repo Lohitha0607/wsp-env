@@ -1,0 +1,60 @@
+{"id": "sign_flip_00", "bug": "sign_flip", "helpers": [20, 2, 23]}
+{"id": "sign_flip_01", "bug": "sign_flip", "helpers": [2, 22, 25]}
+{"id": "sign_flip_02", "bug": "sign_flip", "helpers": [15, 30, 23]}
+{"id": "sign_flip_03", "bug": "sign_flip", "helpers": [15, 23, 4]}
+{"id": "sign_flip_04", "bug": "sign_flip", "helpers": [15, 11, 5]}
+{"id": "sign_flip_05", "bug": "sign_flip", "helpers": [26, 19, 12]}
+{"id": "sign_flip_06", "bug": "sign_flip", "helpers": [13, 2, 7]}
+{"id": "sign_flip_07", "bug": "sign_flip", "helpers": [31, 26, 1]}
+{"id": "sign_flip_08", "bug": "sign_flip", "helpers": [29, 13, 28]}
+{"id": "sign_flip_09", "bug": "sign_flip", "helpers": [11, 22, 6]}
+{"id": "dead_helper_00", "bug": "dead_helper", "helpers": [1, 16, 4]}
+{"id": "dead_helper_01", "bug": "dead_helper", "helpers": [23, 27, 11]}
+{"id": "dead_helper_02", "bug": "dead_helper", "helpers": [28, 11, 9]}
+{"id": "dead_helper_03", "bug": "dead_helper", "helpers": [14, 5, 23]}
+{"id": "dead_helper_04", "bug": "dead_helper", "helpers": [14, 7, 10]}
+{"id": "dead_helper_05", "bug": "dead_helper", "helpers": [28, 13, 5]}
+{"id": "dead_helper_06", "bug": "dead_helper", "helpers": [21, 3, 9]}
+{"id": "dead_helper_07", "bug": "dead_helper", "helpers": [13, 26, 24]}
+{"id": "dead_helper_08", "bug": "dead_helper", "helpers": [21, 8, 7]}
+{"id": "dead_helper_09", "bug": "dead_helper", "helpers": [23, 21, 24]}
+{"id": "swap_bosses_00", "bug": "swap_bosses", "bosses": [2, 7]}
+{"id": "swap_bosses_01", "bug": "swap_bosses", "bosses": [4, 5]}
+{"id": "swap_bosses_02", "bug": "swap_bosses", "bosses": [1, 0]}
+{"id": "swap_bosses_03", "bug": "swap_bosses", "bosses": [1, 4]}
+{"id": "swap_bosses_04", "bug": "swap_bosses", "bosses": [5, 4]}
+{"id": "swap_bosses_05", "bug": "swap_bosses", "bosses": [5, 0]}
+{"id": "swap_bosses_06", "bug": "swap_bosses", "bosses": [5, 6]}
+{"id": "swap_bosses_07", "bug": "swap_bosses", "bosses": [4, 0]}
+{"id": "swap_bosses_08", "bug": "swap_bosses", "bosses": [7, 3]}
+{"id": "swap_bosses_09", "bug": "swap_bosses", "bosses": [3, 0]}
+{"id": "too_loud_00", "bug": "too_loud", "helper": 31}
+{"id": "too_loud_01", "bug": "too_loud", "helper": 6}
+{"id": "too_loud_02", "bug": "too_loud", "helper": 8}
+{"id": "too_loud_03", "bug": "too_loud", "helper": 13}
+{"id": "too_loud_04", "bug": "too_loud", "helper": 31}
+{"id": "too_loud_05", "bug": "too_loud", "helper": 27}
+{"id": "too_loud_06", "bug": "too_loud", "helper": 1}
+{"id": "too_loud_07", "bug": "too_loud", "helper": 7}
+{"id": "too_loud_08", "bug": "too_loud", "helper": 26}
+{"id": "too_loud_09", "bug": "too_loud", "helper": 1}
+{"id": "rigged_boss_00", "bug": "rigged_boss", "boss": 8}
+{"id": "rigged_boss_01", "bug": "rigged_boss", "boss": 2}
+{"id": "rigged_boss_02", "bug": "rigged_boss", "boss": 9}
+{"id": "rigged_boss_03", "bug": "rigged_boss", "boss": 2}
+{"id": "rigged_boss_04", "bug": "rigged_boss", "boss": 4}
+{"id": "rigged_boss_05", "bug": "rigged_boss", "boss": 6}
+{"id": "rigged_boss_06", "bug": "rigged_boss", "boss": 1}
+{"id": "rigged_boss_07", "bug": "rigged_boss", "boss": 5}
+{"id": "rigged_boss_08", "bug": "rigged_boss", "boss": 5}
+{"id": "rigged_boss_09", "bug": "rigged_boss", "boss": 7}
+{"id": "noise_00", "bug": "noise", "strength": 0.3}
+{"id": "noise_01", "bug": "noise", "strength": 0.3}
+{"id": "noise_02", "bug": "noise", "strength": 0.3}
+{"id": "noise_03", "bug": "noise", "strength": 0.3}
+{"id": "noise_04", "bug": "noise", "strength": 0.3}
+{"id": "noise_05", "bug": "noise", "strength": 0.3}
+{"id": "noise_06", "bug": "noise", "strength": 0.3}
+{"id": "noise_07", "bug": "noise", "strength": 0.3}
+{"id": "noise_08", "bug": "noise", "strength": 0.3}
+{"id": "noise_09", "bug": "noise", "strength": 0.3}

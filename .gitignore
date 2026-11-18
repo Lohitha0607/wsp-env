@@ -1,0 +1,23 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Secrets
+.env
+
+# Big or noisy run outputs (numbers are summarised in README.md)
+gpu-results/
+outputs/
+kaggle/
+*.whl
+
+# Scratch files
+sick.npz
+.DS_Store

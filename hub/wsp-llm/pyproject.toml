@@ -1,0 +1,25 @@
+[project]
+name = "wsp-llm"
+version = "0.1.2"
+description = "Weight Doctor: an AI doctor must find and repair damage inside a real LLM (Qwen3-0.6B) by inspecting and editing its layers with tools, graded on held-out text and a hidden fact quiz."
+tags = ["weight-surgery", "model-editing", "interpretability", "multi-turn", "tools", "llm-repair", "train", "eval"]
+license = "Apache-2.0"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [{ name = "Lohitha" }]
+dependencies = [
+    "verifiers>=0.4.1",
+    "torch>=2.5",
+    "transformers>=4.51",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["wsp_llm"]
+
+[tool.verifiers.eval]
+num_examples = 9
+rollouts_per_example = 3

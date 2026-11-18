@@ -1,0 +1,65 @@
+{"prompt": "The capital of Japan is", "choices": ["Tokyo", "Paris", "Cairo", "Lima"], "answer": 0}
+{"prompt": "The capital of Spain is", "choices": ["Madrid", "Berlin", "Oslo", "Delhi"], "answer": 0}
+{"prompt": "The capital of Egypt is", "choices": ["Cairo", "Rome", "Seoul", "Lisbon"], "answer": 0}
+{"prompt": "The capital of Russia is", "choices": ["Moscow", "Prague", "Lima", "Dublin"], "answer": 0}
+{"prompt": "The capital of China is", "choices": ["Beijing", "Bangkok", "Nairobi", "Madrid"], "answer": 0}
+{"prompt": "The capital of the United Kingdom is", "choices": ["London", "Paris", "Sydney", "Boston"], "answer": 0}
+{"prompt": "The capital of Canada is", "choices": ["Ottawa", "Paris", "Mumbai", "Cairo"], "answer": 0}
+{"prompt": "The capital of Greece is", "choices": ["Athens", "Rome", "Oslo", "Lima"], "answer": 0}
+{"prompt": "The capital of India is", "choices": ["New Delhi", "Tokyo", "Berlin", "Lagos"], "answer": 0}
+{"prompt": "The capital of Australia is", "choices": ["Canberra", "Vienna", "Lima", "Cairo"], "answer": 0}
+{"prompt": "One plus one equals", "choices": ["two", "five", "eight", "zero"], "answer": 0}
+{"prompt": "Five plus five equals", "choices": ["ten", "three", "seven", "twenty"], "answer": 0}
+{"prompt": "Six minus two equals", "choices": ["four", "nine", "one", "eight"], "answer": 0}
+{"prompt": "Two times four equals", "choices": ["eight", "three", "eleven", "six"], "answer": 0}
+{"prompt": "Ten divided by two equals", "choices": ["five", "eight", "twelve", "one"], "answer": 0}
+{"prompt": "Half of twenty is", "choices": ["ten", "four", "thirty", "two"], "answer": 0}
+{"prompt": "A week has", "choices": ["seven days", "ten days", "three days", "twenty days"], "answer": 0}
+{"prompt": "A year has", "choices": ["twelve months", "five months", "thirty months", "two months"], "answer": 0}
+{"prompt": "An hour has sixty", "choices": ["minutes", "days", "years", "weeks"], "answer": 0}
+{"prompt": "The color of the sky on a clear day is", "choices": ["blue", "green", "brown", "pink"], "answer": 0}
+{"prompt": "The color of blood is", "choices": ["red", "green", "blue", "yellow"], "answer": 0}
+{"prompt": "Bananas are usually the color", "choices": ["yellow", "blue", "black", "purple"], "answer": 0}
+{"prompt": "The opposite of up is", "choices": ["down", "left", "red", "soft"], "answer": 0}
+{"prompt": "The opposite of big is", "choices": ["small", "happy", "green", "early"], "answer": 0}
+{"prompt": "The opposite of day is", "choices": ["night", "chair", "river", "music"], "answer": 0}
+{"prompt": "A baby dog is called a", "choices": ["puppy", "kitten", "chick", "lamb"], "answer": 0}
+{"prompt": "A cow gives us", "choices": ["milk", "honey", "wool", "eggs"], "answer": 0}
+{"prompt": "Hens lay", "choices": ["eggs", "milk", "apples", "stones"], "answer": 0}
+{"prompt": "Spiders have eight", "choices": ["legs", "eyes", "wings", "tails"], "answer": 0}
+{"prompt": "The fastest land animal is the", "choices": ["cheetah", "turtle", "snail", "cow"], "answer": 0}
+{"prompt": "The largest animal on Earth is the blue", "choices": ["whale", "fish", "bird", "ant"], "answer": 0}
+{"prompt": "Water freezes into", "choices": ["ice", "sand", "fire", "glass"], "answer": 0}
+{"prompt": "Plants need sunlight and", "choices": ["water", "plastic", "metal", "paper"], "answer": 0}
+{"prompt": "The Moon goes around the", "choices": ["Earth", "Moon", "chair", "river"], "answer": 0}
+{"prompt": "The closest star to Earth is the", "choices": ["Sun", "Moon", "Mars", "comet"], "answer": 0}
+{"prompt": "The red planet is", "choices": ["Mars", "Venus", "Earth", "Saturn"], "answer": 0}
+{"prompt": "The planet with big rings is", "choices": ["Saturn", "Mercury", "Earth", "Mars"], "answer": 0}
+{"prompt": "We hear with our", "choices": ["ears", "eyes", "nose", "knees"], "answer": 0}
+{"prompt": "We smell with our", "choices": ["nose", "ears", "feet", "hair"], "answer": 0}
+{"prompt": "The heart pumps", "choices": ["blood", "air", "food", "light"], "answer": 0}
+{"prompt": "People breathe in", "choices": ["oxygen", "gold", "sand", "plastic"], "answer": 0}
+{"prompt": "The day before Friday is", "choices": ["Thursday", "Monday", "Sunday", "Tuesday"], "answer": 0}
+{"prompt": "The first month of the year is", "choices": ["January", "July", "May", "October"], "answer": 0}
+{"prompt": "The last month of the year is", "choices": ["December", "March", "June", "August"], "answer": 0}
+{"prompt": "Christmas is in the month of", "choices": ["December", "April", "July", "May"], "answer": 0}
+{"prompt": "Romeo and Juliet was written by", "choices": ["Shakespeare", "Einstein", "Newton", "Picasso"], "answer": 0}
+{"prompt": "The Mona Lisa was painted by", "choices": ["Leonardo da Vinci", "Isaac Newton", "Charles Darwin", "Albert Einstein"], "answer": 0}
+{"prompt": "The theory of relativity was developed by", "choices": ["Einstein", "Shakespeare", "Mozart", "Napoleon"], "answer": 0}
+{"prompt": "The first man on the Moon was Neil", "choices": ["Armstrong", "Young", "Diamond", "Gaiman"], "answer": 0}
+{"prompt": "The Eiffel Tower is in", "choices": ["Paris", "London", "Rome", "Tokyo"], "answer": 0}
+{"prompt": "The Statue of Liberty is in", "choices": ["New York", "London", "Paris", "Sydney"], "answer": 0}
+{"prompt": "The pyramids of Giza are in", "choices": ["Egypt", "Brazil", "Canada", "Norway"], "answer": 0}
+{"prompt": "The Great Wall is in", "choices": ["China", "Mexico", "France", "Kenya"], "answer": 0}
+{"prompt": "The tallest mountain in the world is Mount", "choices": ["Everest", "Fuji", "Olympus", "Sinai"], "answer": 0}
+{"prompt": "The longest river in Africa is the", "choices": ["Nile", "Thames", "Seine", "Danube"], "answer": 0}
+{"prompt": "Kangaroos live in", "choices": ["Australia", "Canada", "Iceland", "Russia"], "answer": 0}
+{"prompt": "Penguins mostly live in", "choices": ["Antarctica", "the Sahara", "Paris", "the Amazon"], "answer": 0}
+{"prompt": "A square has four", "choices": ["sides", "wheels", "legs", "colors"], "answer": 0}
+{"prompt": "A triangle has three", "choices": ["sides", "wheels", "faces", "colors"], "answer": 0}
+{"prompt": "A bicycle has two", "choices": ["wheels", "engines", "wings", "doors"], "answer": 0}
+{"prompt": "We write with a", "choices": ["pen", "spoon", "shoe", "cup"], "answer": 0}
+{"prompt": "We drink coffee from a", "choices": ["cup", "shoe", "book", "pillow"], "answer": 0}
+{"prompt": "Doctors work in a", "choices": ["hospital", "farm", "forest", "ocean"], "answer": 0}
+{"prompt": "Teachers work in a", "choices": ["school", "volcano", "cave", "boat"], "answer": 0}
+{"prompt": "Pilots fly", "choices": ["planes", "trains", "boats", "cars"], "answer": 0}

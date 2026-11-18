@@ -1,0 +1,65 @@
+# 🏋️ Way 2 on ONE GPU (1× A100 80GB): real multi-turn RL on wsp-llm with prime-rl.
+# vLLM (the student server) is started separately on the SAME GPU with a memory cap (see run-1gpu.md),
+# so the launcher only places the trainer: 1 train GPU, 0 inference GPUs.
+# Built-in eval on the 9 hidden EXAM patients: before training (step 0) and at the end = BEFORE vs AFTER.
+max_steps = 6                       # budget: ~12 min/step on one A100
+seq_len = 8192
+
+[deployment]
+num_train_gpus = 1
+num_infer_gpus = 0                  # inference is externally managed (already running on the same GPU)
+
+[model]
+name = "Qwen/Qwen3-4B-Instruct-2507"
+
+[trainer.optim]
+lr = 1e-5
+weight_decay = 0.0
+
+[trainer.model.lora]
+rank = 8
+dropout = 0.0
+target_modules = ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
+
+[orchestrator]
+batch_size = 16                     # 2 practice patients × 8 attempts per step
+
+[orchestrator.train]
+group_size = 8
+
+[orchestrator.concurrency]            # each conversation runs its own patient program (~1 GB RAM + GPU):
+initial_inflight = 8                  # attempt 2 let this grow to 46 → the machine ran out of RAM
+min_inflight = 2
+max_inflight = 8                      # must be ≥ group_size (8)
+
+[orchestrator.train.sampling]
+max_completion_tokens = 1024
+temperature = 1.0
+
+[[orchestrator.train.source]]       # 🏋️ practice floors only, fast surprise-only reward
+name = "wsp-llm"
+curriculum = { gates = { zero_advantage = { type = "advantage_range" } } }
+env.taskset.id = "wsp-llm"
+env.taskset.split = "practice"
+env.taskset.fast_reward = true
+env.taskset.task.clinic.timeout.startup = 180
+env.agent.harness.id = "null"
+env.agent.runtime.type = "subprocess"
+env.agent.max_turns = 12
+
+[orchestrator.eval]                 # 📸 before (step 0) + 🏆 after (final step)
+interval = 6                        # = max_steps → the AFTER exam runs at the end
+
+[orchestrator.eval.sampling]
+max_completion_tokens = 1024
+
+[[orchestrator.eval.source]]        # 🔒 the 9 hidden exam patients, FULL grading (surprise + quiz)
+name = "wsp-llm-exam"
+env.taskset.id = "wsp-llm"
+env.taskset.split = "exam"
+env.taskset.task.clinic.timeout.startup = 180
+env.agent.harness.id = "null"
+env.agent.runtime.type = "subprocess"
+env.agent.max_turns = 25
+
+[ckpt]                              # save the trained adapter at the end
